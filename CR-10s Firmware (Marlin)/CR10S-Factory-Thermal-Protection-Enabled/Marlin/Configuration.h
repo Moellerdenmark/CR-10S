@@ -465,9 +465,9 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 
   #if ENABLED(AUTO_BED_LEVELING_GRID)
 
-    #define LEFT_PROBE_BED_POSITION 30
+    #define LEFT_PROBE_BED_POSITION 60
     #define RIGHT_PROBE_BED_POSITION 270
-    #define FRONT_PROBE_BED_POSITION 30
+    #define FRONT_PROBE_BED_POSITION 60
     #define BACK_PROBE_BED_POSITION 270
 
     #define MIN_PROBE_EDGE 10 // The Z probe minimum square sides can be no smaller than this.
@@ -491,8 +491,8 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 
   // Offsets to the Z probe relative to the nozzle tip.
   // X and Y offsets must be integers.
-  #define X_PROBE_OFFSET_FROM_EXTRUDER 0     // Z probe to nozzle X offset: -left  +right
-  #define Y_PROBE_OFFSET_FROM_EXTRUDER 0     // Z probe to nozzle Y offset: -front +behind
+  #define X_PROBE_OFFSET_FROM_EXTRUDER -60     // Z probe to nozzle X offset: -left  +right
+  #define Y_PROBE_OFFSET_FROM_EXTRUDER -10     // Z probe to nozzle Y offset: -front +behind
   #define Z_PROBE_OFFSET_FROM_EXTRUDER -0.2  // Z probe to nozzle Z offset: -below (always!)
 
   #define Z_RAISE_BEFORE_HOMING 8       // (in mm) Raise Z axis before homing (G28) for Z probe clearance.
